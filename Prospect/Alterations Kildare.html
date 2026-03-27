@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Alterations Kildare | Perfect Fit Tailoring</title>
+    <style>
+        /* Basic Reset & Branding */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary-gold: #b08d57; --dark-grey: #333; --light-grey: #f4f4f4; }
+
+        body { line-height: 1.6; color: var(--dark-grey); }
+
+        /* Header & Hero */
+        header { background: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-gold); }
+        
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1556905055-8f358a7a4bb4?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+
+        /* Buttons */
+        .btn { background: var(--primary-gold); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #8e7145; }
+
+        /* Sections */
+        section { padding: 4rem 10%; }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary-gold); }
+
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .service-card { background: var(--light-grey); padding: 2rem; border-radius: 8px; text-align: center; transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card i { font-size: 2rem; color: var(--primary-gold); display: block; margin-bottom: 1rem; }
+
+        /* Contact Section */
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-info h3 { margin-bottom: 1rem; }
+        form input, form textarea { width: 100%; padding: 12px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+        form button { width: 100%; border: none; cursor: pointer; }
+
+        /* Footer */
+        footer { background: var(--dark-grey); color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .contact-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kildare Tailors</div>
+        <nav>
+            <a href="#services" style="margin-right: 20px; text-decoration: none; color: #333;">Services</a>
+            <a href="#contact" class="btn">Book Appointment</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>The Perfect Fit, Every Time</h1>
+        <p>Expert clothing alterations and tailoring in the heart of County Kildare. From bridal wear to everyday denim, we make clothes feel like they were made for you.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>Quality craftsmanship for every garment</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Bridal & Formal</h3>
+                <p>Specialist resizing for wedding dresses, bridesmaids, and debs attire.</p>
+            </div>
+            <div class="service-card">
+                <h3>Suits & Jackets</h3>
+                <p>Tapering, sleeve shortening, and relining for a sharp, modern silhouette.</p>
+            </div>
+            <div class="service-card">
+                <h3>Zip & Repair</h3>
+                <p>Fast replacement of zippers and expert mending of tears and holes.</p>
+            </div>
+            <div class="service-card">
+                <h3>Trousers & Jeans</h3>
+                <p>Hemming, waist adjustments, and original-finish denim hems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #fff;">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Visit Our Studio</h2>
+                <p>Located in the heart of Kildare, we offer private fittings by appointment.</p>
+                <br>
+                <h3>📍 Location</h3>
+                <p>Main Street, Kildare Town, Co. Kildare</p>
+                <br>
+                <h3>📞 Contact</h3>
+                <p>Phone: 045 123 4567</p>
+                <p>Email: hello@kildaretailors.ie</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Tell us about your garment (e.g. Wedding dress shortening)"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kildare Tailoring Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

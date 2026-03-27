@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicklow Marine Repairs | Expert Boat Maintenance</title>
+    <style>
+        /* Basic Reset & Branding */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary: #004a99; --secondary: #f4f4f4; --accent: #ff6600; --text: #333; }
+
+        body { line-height: 1.6; color: var(--text); }
+
+        /* Header & Navigation */
+        header { background: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text); font-weight: 500; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.istockphoto.com/id/1271121280/photo/forgotten-abandoned-old-boat-covered-with-layer-of-dust-hidden-in-old-barn-full-of-mess-and.jpg?s=1024x1024&w=is&k=20&c=IRl2dVquXauREZt3l_lyCYVfU5lzWcRnSWSSI9wYhOE='); 
+            background-size: cover; background-position: center; height: 80vh; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        .btn { background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #e65c00; }
+
+        /* Services Section */
+        .services { padding: 4rem 5%; text-align: center; background: var(--secondary); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .service-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-card h3 { color: var(--primary); margin-bottom: 1rem; }
+
+        /* Contact Section */
+        .contact { padding: 4rem 5%; text-align: center; }
+        .contact-info { margin-top: 2rem; font-size: 1.1rem; }
+        
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Wicklow Marine Repairs</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Keep Your Boat Ship-Shape</h1>
+        <p>Premium marine engine repairs and fiberglass maintenance serving Wicklow Harbour, Arklow, and Greystones.</p>
+        <a href="tel:0871234567" class="btn">Call for an Estimate</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Marine Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Engine Servicing</h3>
+                <p>Inboard and outboard maintenance to ensure your vessel is reliable at sea.</p>
+            </div>
+            <div class="service-card">
+                <h3>Hull Repairs</h3>
+                <p>Fiberglass patching, anti-fouling, and structural repairs for all boat types.</p>
+            </div>
+            <div class="service-card">
+                <h3>Electrical Systems</h3>
+                <p>Marine electronics installation, wiring, and battery system upgrades.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mobile Call-outs</h3>
+                <p>We come to you! On-site repairs available across the Wicklow coastline.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Ready to head back out?</h2>
+        <p>Contact us today for a free quote or to book a service.</p>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> 087 123 4567</p>
+            <p><strong>Email:</strong> repairs@wicklowmarine.ie</p>
+            <p><strong>Location:</strong> Wicklow North Pier / Mobile Service</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Wicklow Marine Repairs. Serving the Garden County coast.</p>
+    </footer>
+
+</body>
+</html>

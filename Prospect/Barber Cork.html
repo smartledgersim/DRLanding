@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rebel Cut | Premier Barbering Cork</title>
+    <style>
+        /* CSS Variables for easy branding changes */
+        :root {
+            --primary-gold: #c5a059;
+            --dark-bg: #1a1a1a;
+            --light-text: #f4f4f4;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-main);
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: #111;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--primary-gold);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--light-text);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1470');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: var(--primary-gold);
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e2bc77;
+            transform: scale(1.05);
+        }
+
+        /* Pricing Section */
+        .services {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .price-list {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #444;
+            padding: 10px 0;
+        }
+
+        /* Location & Hours */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 10%;
+            background: #222;
+        }
+
+        .info-card h3 {
+            color: var(--primary-gold);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">THE REBEL CUT</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Sharper Looks in the Real Capital</h1>
+        <p>Traditional techniques, modern style. Located in the heart of Cork City.</p>
+        <a href="#booking" class="cta-button">Book Your Chair</a>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="price-list">
+            <div class="price-item"><span>Standard Haircut</span> <span>€25</span></div>
+            <div class="price-item"><span>Skin Fade</span> <span>€30</span></div>
+            <div class="price-item"><span>Beard Trim & Sculpt</span> <span>€15</span></div>
+            <div class="price-item"><span>The Full Works (Hair + Beard)</span> <span>€40</span></div>
+            <div class="price-item"><span>Student Cut (Mon-Wed)</span> <span>€20</span></div>
+        </div>
+    </section>
+
+    <section id="location" class="info-grid">
+        <div class="info-card">
+            <h3>Find Us</h3>
+            <p>123 Oliver Plunkett Street<br>
+            Cork City, T12 X000</p>
+            <p>📞 021 123 4567</p>
+        </div>
+        <div class="info-card">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 09:00 - 19:00</p>
+            <p>Saturday: 08:30 - 17:00</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Rebel Cut Barber Shop Cork. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

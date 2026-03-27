@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Services – Laninya Digital Resources</title>
+  <title>Services – Laninya Design Resources</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Service menu for websites, quick fixes, SEO, and business support for Irish SMEs." />
   <style>
@@ -24,7 +24,7 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 55%),
         radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.16), transparent 55%),
@@ -179,7 +179,6 @@
       box-shadow: 0 20px 48px rgba(15, 23, 42, 0.8);
       transform: translateY(-1px);
     }
-
     /* Back to top button */
     .back-to-top {
       position: fixed;
@@ -188,7 +187,6 @@
       z-index: 40;
       display: none;
     }
-
     .back-to-top button {
       border-radius: 999px;
       border: none;
@@ -199,16 +197,28 @@
       cursor: pointer;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.8);
     }
-
     .back-to-top button:hover {
       background: #020617;
     }
+    .pricing-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--muted);
+    }      
       @keyframes fadeIn {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
     }
-      @media (max-width: 640px) {
-      header { flex-direction: column; align-items: flex-start; }
+    @media (max-width: 880px) {
+      .pricing-grid { grid-template-columns: minmax(0, 1fr); }
+      nav { justify-content: flex-start; }
+    }
+      .pricing-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+    .section-title { font-size: 22px; font-weight: 700; margin-top: 130px; margin-bottom: 8px; }                
     }
   </style>
 </head>
@@ -220,7 +230,7 @@
       <div class="brand">
         <div class="brand-logo">LDR</div>
         <div>
-          <div class="brand-title">Laninya – Digital Resources</div>
+          <div class="brand-title">Laninya – Design Resources</div>
           <div class="brand-sub">Websites & Digital Marketing for local Irish small businesses</div>
         </div>
       </div>
@@ -239,7 +249,7 @@
     <main>
       <section>
         <div class="section-label">Services</div>
-        <h2 class="section-title">Services for local Irish businesses</h2>
+        <h2 class="section-title">Services for local Irish small businesses</h2>
         <p class="section-sub">
           This is your service menu. You can send it as a PDF, WhatsApp message, or email attachment when someone asks,
           “What do you offer?”.
@@ -247,82 +257,106 @@
 
         <div class="cards-grid">
           <article class="cards-card highlight">
-            <h3 class="card-title">FREE</h3>
+            <div class="pricing-label">Starter Offer</div>              
+            <h3 class="card-title">Free – “Try Before You Buy”</h3>
             <p class="card-tagline">No‑risk way to see how you work.</p>
             <ul class="card-list">
               <li>Website audit</li>
               <li>Online presence review</li>
-              <li>Demo screenshot</li>
-              <li>10‑minute consultation</li>
+              <li>Demo Landing Page screenshot</li>
+              <li>10‑minute consultation (Fixes & Updates)</li>
+                
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <h3 class="card-title">Quick Fixes (€10–€40)</h3>
-            <p class="card-tagline">Fast, simple, and affordable.</p>
+            <div class="pricing-label">Basic Offer</div>
+            <h3 class="card-title">Fast, simple, and affordable</h3>
+            <p class="card-tagline">Quick Fixes (€15–€30)</p>
             <ul class="card-list">
-              <li>Text edits</li>
-              <li>Photo updates</li>
-              <li>Opening hours update</li>
+              <li>Text edits fixing small text or spacing issue</li>
+              <li> Rewrite service description</li>
+              <li> Photo updates adding new photos 
+              <li> Opening hours updating description and formats</li>
+              <li> Changing font design</li>
+              <li> Mini SEO tune‑up (titles + meta descriptions)</li>
+              <li> Report layout issue</li>                                  
               <li>Small CSS fixes</li>
-              <li>Mini SEO tune‑up</li>
-              <li>VA support (20 minutes)</li>
+              <li>Light Adm (Word, Excel)</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <h3 class="card-title">Landing Page (€149)</h3>
-            <p class="card-tagline">Your main website offer.</p>
+            <div class="pricing-label">Core Offer</div>              
+            <h3 class="card-title">Your main website offer.</h3>
+            <p class="card-tagline">Landing Page (€49)</p>
             <ul class="card-list">
               <li>1‑page website</li>
               <li>Mobile‑friendly</li>
               <li>Clean HTML/CSS</li>
               <li>Services + reviews + contact</li>
-              <li>Basic SEO</li>
+              <li>Basic SEO (titles + meta descriptions, short and long-tail keywords)</li>
               <li>1 round of edits</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <h3 class="card-title">Add‑Ons (€15–€120)</h3>
-            <p class="card-tagline">Extra features when they’re ready.</p>
+            <div class="pricing-label">Silver Offer</div>
+            <h3 class="card-title">Extra features when you’re ready.</h3>
+            <p class="card-tagline">Add‑Ons (€15–€120)</p>
             <ul class="card-list">
               <li>New service section</li>
-              <li>Gallery</li>
-              <li>Booking button</li>
-              <li>Testimonials</li>
+              <li>Photo Gallery Page</li>
+              <li>Booking system embeded</li>
+              <li>Testimonials Page</li>
               <li>SEO content</li>
-              <li>Extra pages</li>
+              <li>Extra pages</li> 
+              <li>Light Adm (Word, Excel, Social Media)</li>
+              <li>Light Bookkeeping (Sage, QuickBooks, Xero, Wave)</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <h3 class="card-title">Ongoing Support (€20/hour)</h3>
-            <p class="card-tagline">Stay on call for your clients.</p>
+            <div class="pricing-label">Premium Offer</div>
+            <h3 class="card-title">We're on call for our clients.</h3>
+            <p class="card-tagline">Ongoing Support (From €120)</p>
             <ul class="card-list">
-              <li>Updates</li>
-              <li>Admin</li>
-              <li>Content changes</li>
-              <li>Fixes</li>
+              <li>Includes Starter, Basic, Core and Silver Offer</li>
+              <li>Website Updates</li>
+              <li>Content changes, reposting, revamping</li>
+              <li>Fixes in layout and design</li>
+                <li>SEO/SERP improvement</li>
+                <li>Custom Admin (Word, Excel, Database) 
+                <li>Social Media, Facebook/Instagram, LinkedIn, others</li>
+                <li>Custom Bookkeeping and Digital Marketing</li>
+
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <h3 class="card-title">Technical Writing & SEO</h3>
-            <p class="card-tagline">Make your clients look like the experts.</p>
+            <div class="pricing-label">Gold Offer</div>
+            <h3 class="card-title">Look like the experts.</h3>
+            <p class="card-tagline">Technical Writing & Support (€ Custom)</p>
             <ul class="card-list">
-              <li>Professional articles and documentation</li>
-              <li>SEO‑friendly service descriptions</li>
-              <li>Website copy that converts</li>
+              <li>Video Gallery (Youtube)</li>
+              <li>Professional Content Marketing and articles</li>
+              <li>Friendly advice service on process and procedures</li>
+              <li>Dedicated Admin, Bookkeeping and Digital Marketing</li>
+              <li>Accounting System Automation and Documentation</li>
+              <li>E-commerce setup, implementation and maintenance</li>
+              <li>Social Ads including video and display advertising</li>
+              <li>Automated e-mail marketing campaings setup and maintenance</li>
+              <li>Competitor Monitoring</li>
+              <li>Implementation of GA4 (Google Analytics) into your site HTML</li>
+              <li>Interested? Let's talk about your requirements.</li>
             </ul>
           </article>
         </div>
 
         <div class="cta-banner">
           <div>
-            <strong>Want this as a one‑page PDF?</strong><br />
-            Copy this content into a document and export as PDF to send to clients.
-          </div>
+            <strong>Want this try but lack trust?</strong><br />
+            Start with something tiny.</strong><br />Ask for a €15–€20 quick fix first, then decide if you want scale up. No strings attached.</div>
           <div>
             <a href="contact.html" class="btn btn-primary" target="_blank" rel="noopener">Ask for a custom quote</a>
           </div>
@@ -341,7 +375,7 @@
         <a href="business-model.html">Business Model</a>·-->
         <a href="contact.html">Contact</a>
       </div>
-      © <span id="year"></span> Laninya – Digital Resources.
+      © <span id="year"></span> Laninya – Design Resources.
     </footer>
 
   <div class="back-to-top" id="backToTop">

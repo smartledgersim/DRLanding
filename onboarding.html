@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Client Onboarding – Laninya Digital Studio</title>
+  <title>Client Onboarding – Laninya Design Resources</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Welcome to Laninya Digital Studio. Here’s everything you need to get started with your new website." />
+  <meta name="description" content="Welcome to Laninya Design Resources. Here’s everything you need to get started with your new website." />
   <style>
     :root {
       --bg: #f5f7fb;
@@ -244,6 +244,24 @@
       cursor: pointer;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.8);
     }
+    .input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 6px 0 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      font-size: 14px;
+      color: var(--text);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    }
+
+    .input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+    }
+      
   </style>
 </head>
 
@@ -254,7 +272,7 @@
       <div class="brand">
         <div class="brand-logo">LD</div>
         <div>
-          <div class="brand-title">Laninya – Digital Studio</div>
+          <div class="brand-title">Laninya – Design Resources</div>
           <div class="brand-sub">Client Onboarding</div>
         </div>
       </div>
@@ -275,8 +293,7 @@
     <a href="index.html" class="return-home">← Return to Homepage</a>
 
     <section>
-      <div class="section-label">Welcome</div>
-      <h2 class="section-title">Welcome to Laninya Digital Studio</h2>
+      <h2 class="section-title">Welcome to Laninya Design Resources</h2>
       <p class="section-sub">
         I’m excited to start building your new website. This onboarding page explains exactly how the process works,
         what I need from you, and what happens next.
@@ -286,35 +303,59 @@
     <div class="card">
       <h3>What to Expect</h3>
       <ul class="list">
-        <li>A simple, friendly process</li>
-        <li>Clear communication at every step</li>
-        <li>No jargon, no confusion</li>
-        <li>A website built for real Irish customers</li>
+        <li>A simple, friendly, transparent process.</li>
+        <li>Clear communication at every step.</li>
+        <li>No jargons, no confusion.</li>
+        <li>A website built for real Irish customers.</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Step‑by‑Step Onboarding</h3>
       <ul class="list">
-        <li><strong>Step 1:</strong> You send me your business details</li>
-        <li><strong>Step 2:</strong> I create your homepage layout</li>
+        <li><strong>Step 1:</strong> You send me your business details to show on the website</li>
+        <li><strong>Step 2:</strong> Your homepage layout is created (draft)</li>
         <li><strong>Step 3:</strong> You review and request changes</li>
-        <li><strong>Step 4:</strong> I build the full site</li>
-        <li><strong>Step 5:</strong> Final review + launch</li>
+        <li><strong>Step 4:</strong> Your full site is built</li>
+        <li><strong>Step 5:</strong> Final review + Launch</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>What I Need From You</h3>
-      <ul class="list">
-        <li>Your business name</li>
-        <li>Your location (town/county)</li>
-        <li>Your services (list)</li>
-        <li>Your opening hours</li>
-        <li>Your contact details</li>
-        <li>Any photos you want included</li>
-        <li>Your preferred colours (optional)</li>
-      </ul>
+        <div class="card" style="margin-top:20px;">
+  <h3>Client Onboarding Form</h3>
+  <p>Please fill this in so I can start building your website.</p>
+
+  <form id="contactForm" action="https://formspree.io/f/mlgodkdl" method="POST">
+
+    <label>Business Name</label>
+    <input type="text" required class="input" name="Business Name">
+
+    <label>Location (Town / County)</label>
+    <input type="text" required class="input" name="Location">
+
+    <label>Services You Offer</label>
+    <textarea class="input" rows="4" required name="Services"></textarea >
+
+    <label>Opening Hours</label>
+    <input type="text" class="input" name="Opening Hours">
+
+    <label>Contact Number</label>
+    <input type="text" class="input" name="Phone">
+
+    <label>Email Address</label>
+    <input type="email" required class="input" name="Email">
+
+    <label>Preferred Colours (Optional)</label>
+    <input type="text" class="input" name="Colours">
+
+    <label>Additional Notes</label>
+    <textarea rows="4" class="input" name="Notes"></textarea>
+
+    <button type="submit" class="btn-primary" style="padding:10px 18px; display:inline-block; border-radius:999px; text-decoration:none;">Submit Onboarding Form</button>
+  </form>
+</div>
     </div>
 
     <div class="card">
@@ -330,19 +371,18 @@
     <div class="card">
       <h3>Payment Structure</h3>
       <ul class="list">
-        <li>50% upfront</li>
-        <li>50% on launch</li>
-        <li>Quick fixes billed separately (€10–€40)</li>
-        <li>Support billed hourly (€20/hour)</li>
+        <li>10% deposit</li>
+        <li>Balance on launch</li>
+        <li>Quick fixes on delivery</li>
+        <li>Support offered during process</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Next Steps</h3>
-      <p>Send your business details to:</p>
+      <p>If you prefer you can send your business details (form above) to:</p>
       <p><strong>Email:</strong> Design.Resources@dr.com</p>
-      <p>Or click the button below.</p>
-      <a href="contact.html" class="btn-primary" style="padding:10px 18px; display:inline-block; border-radius:999px; text-decoration:none;">Start Onboarding</a>
+
     </div>
 
     <footer>
@@ -355,7 +395,7 @@
         <a href="business-model.html">Business Model</a>·-->
         <a href="contact.html">Contact</a>
       </div>
-      © <span id="year"></span> Laninya – Digital Resources.
+      © <span id="year"></span> Laninya – Design Resources.
     </footer>
   </div>
 

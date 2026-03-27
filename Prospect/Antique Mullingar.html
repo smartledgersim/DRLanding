@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mullingar Antique Restorations | Expert Craftsmanship</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #fdfaf6;
+        }
+
+        header {
+            background: #4a3728;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #8b5a2b;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.istockphoto.com/id/475307890/photo/detail-of-an-antique-italian-furniture-just-restored.jpg?s=1024x1024&w=is&k=20&c=1WhOH-Ktokdk-2fIweI3ztWzKrVpRRWL0Crg8HkNMrA=') center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background: #8b5a2b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a67c52;
+        }
+
+        /* Content Sections */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 40px 0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background: #eeeae3;
+            padding: 50px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4a3728;
+            color: white;
+        }
+        nav {position: sticky; top: 0; z-index: 1000; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mullingar Antique Restoration</div>
+        <nav>
+            <a href="#services" style="color: white; text-decoration: none; margin-left: 15px;">Services</a>
+            <a href="#contact" style="color: white; text-decoration: none; margin-left: 15px;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Preserving History in Westmeath</h1>
+        <p>Specialist repair and restoration of fine furniture and heirlooms.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </section>
+
+    <div class="container" id="services">
+        <h2 style="text-align: center;">Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Furniture Repair</h3>
+                <p>Structural repairs for chairs, tables, and cabinets using traditional joinery.</p>
+            </div>
+            <div class="service-card">
+                <h3>French Polishing</h3>
+                <p>Authentic hand-rubbed finishes to bring back the original glow of your wood.</p>
+            </div>
+            <div class="service-card">
+                <h3>Veneer Restoration</h3>
+                <p>Careful matching and replacement of damaged or lifting veneers.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 style="text-align: center;">Visit Our Workshop</h2>
+            <p style="text-align: center;">Located in the heart of Mullingar. We offer collection and delivery across Co. Westmeath.</p>
+            
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Describe your item (age, wood type, damage)"></textarea>
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mullingar Antique Restorations. All Rights Reserved.</p>
+        <p>123 Main Street, Mullingar, Co. Westmeath | 044 123 4567</p>
+    </footer>
+
+</body>
+</html>

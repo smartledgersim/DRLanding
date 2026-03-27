@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballina Stonemasonry</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #4e342e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #3e2723;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;            height: 90vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta {
+            background: #6d4c41;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            background: #fff;
+            color: #6d4c41;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background: #3e2723;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ballina Stonemasonry</h1>
+    <p>Crafting Stone with Tradition & Precision</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Expert Stonework in Ballina</h1>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Stone Walls</h3>
+            <p>Traditional and modern stone wall construction.</p>
+        </div>
+        <div class="card">
+            <h3>Restoration</h3>
+            <p>Careful restoration of historic stone buildings.</p>
+        </div>
+        <div class="card">
+            <h3>Custom Stonework</h3>
+            <p>Bespoke designs for homes, gardens, and features.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Recent Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Garden Features</h3>
+            <p>Handcrafted stone patios and outdoor spaces.</p>
+        </div>
+        <div class="card">
+            <h3>Heritage Work</h3>
+            <p>Restoration of historic stone structures.</p>
+        </div>
+        <div class="card">
+            <h3>Residential Builds</h3>
+            <p>Stone finishes for modern homes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Based in Ballina, we are skilled stonemasons with years of experience 
+        in traditional and contemporary stonework. We take pride in delivering 
+        high-quality craftsmanship tailored to each project.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="cta">
+    <h2>Request a Quote</h2>
+    <p>Get in touch for expert stonework services in Ballina.</p>
+    <button>Contact Us</button>
+</section>
+
+<footer>
+    <p>&copy; 2026 Ballina Stonemasonry | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

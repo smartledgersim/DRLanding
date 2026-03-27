@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Laninya – Design Resources for Local Irish Businesses</title>
+  <title>Laninya – Digital Studio for Local Irish Businesses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Bold, modern websites and support for local Irish businesses. €49 starter sites, quick fixes, and ongoing help." />
+  <meta name="description" content="Bold, modern websites and support for local Irish businesses. €149 starter sites, quick fixes, and ongoing help." />
   <style>
     :root {
       --bg: #f5f7fb;
@@ -25,13 +25,9 @@
 
     * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 55%),
         radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.16), transparent 55%),
@@ -43,26 +39,10 @@
     a { color: var(--primary); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Sticky nav wrapper */
-    .nav-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 50;
-      backdrop-filter: blur(10px);
-      background: linear-gradient(to bottom, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.9));
-      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
-    }
-
-    .nav-inner {
+    .page {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 10px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      padding: 20px 18px 64px;
     }
 
     header {
@@ -73,13 +53,6 @@
       margin-bottom: 24px;
     }
 
-    .page {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 80px 18px 64px; /* extra top for sticky nav */
-      animation: fadeIn 0.6s ease-out;
-    }
-      
     .brand {
       display: flex;
       align-items: center;
@@ -118,6 +91,7 @@
       color: #111827;
       background: rgba(255, 255, 255, 0.7);
       border: 1px solid rgba(148, 163, 184, 0.35);
+      backdrop-filter: blur(8px);
     }
 
     .nav-link:hover {
@@ -176,8 +150,7 @@
     }
 
     .hero {
-      display: flex;
-        justify-content: space-around;
+      display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
       gap: 28px;
       align-items: center;
@@ -185,14 +158,13 @@
     }
 
     .hero-left {
-    margin-bottom: 30px;
-    padding: 24px 22px;
-    border-radius: 22px;
-    background: radial-gradient(circle at top left, #fef3c7, #ffffff 45%, #e5edff 100%);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(148, 163, 184, 0.35);
-    position: relative;
-    overflow: hidden;
+      padding: 24px 22px;
+      border-radius: 22px;
+      background: radial-gradient(circle at top left, #fef3c7, #ffffff 45%, #e5edff 100%);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      position: relative;
+      overflow: hidden;
     }
 
     .hero-left::after {
@@ -234,7 +206,7 @@
       font-size: 14px;
       color: var(--muted);
       margin-bottom: 16px;
-      max-width: 1520px;
+      max-width: 520px;
     }
 
     .hero-badges {
@@ -323,6 +295,7 @@
     .hero-card-list li::before {
       content: "•";
       color: #fbbf24;
+      margin-top: 0;
     }
 
     .hero-card-footer {
@@ -458,72 +431,6 @@
       text-align: center;
     }
 
-    .footer-nav {
-      margin-bottom: 6px;
-    }
-
-    .footer-nav a {
-      margin: 0 6px;
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    /* Floating Contact button */
-    .floating-contact {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 40;
-    }
-
-    .floating-contact a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #2563eb, #1e3a8a);
-      color: #fefce8;
-      font-size: 13px;
-      font-weight: 600;
-      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.6);
-      text-decoration: none;
-    }
-
-    .floating-contact a:hover {
-      box-shadow: 0 20px 48px rgba(15, 23, 42, 0.8);
-      transform: translateY(-1px);
-    }
-
-    /* Back to top button */
-    .back-to-top {
-      position: fixed;
-      right: 18px;
-      bottom: 70px;
-      z-index: 40;
-      display: none;
-    }
-
-    .back-to-top button {
-      border-radius: 999px;
-      border: none;
-      padding: 8px 10px;
-      background: #0f172a;
-      color: #e5e7eb;
-      font-size: 12px;
-      cursor: pointer;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.8);
-    }
-
-    .back-to-top button:hover {
-      background: #020617;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     @media (max-width: 880px) {
       .hero {
         grid-template-columns: minmax(0, 1fr);
@@ -534,149 +441,139 @@
     }
 
     @media (max-width: 640px) {
-    .nav-inner {
+      header {
         flex-direction: column;
         align-items: flex-start;
       }
-      .hero-left {     padding: 20px 18px;     margin-bottom: 20px; }
+      .hero-left { padding: 20px 18px; }
       .hero-card { padding: 14px 14px 12px; }
-    }
-    .page {
-      max-width: var(--max-width);
-      margin-top: 130px;
-      padding: 80px 18px 64px; /* extra top for sticky nav */
-      animation: fadeIn 0.6s ease-out;
     }
   </style>
 </head>
 <body>
-  <div class="nav-wrapper">
-    <div class="nav-inner">
+  <div class="page">
+    <header>
       <div class="brand">
-        <div class="brand-logo">LDR</div>
+        <div class="brand-logo">LD</div>
         <div>
-          <div class="brand-title">Laninya – Design Resources</div>
-          <div class="brand-sub">Websites & Digital Marketing for local Irish small businesses</div>
+          <div class="brand-title">Laninya – Digital Studio</div>
+          <div class="brand-sub">Websites & support for local Irish businesses</div>
         </div>
       </div>
-      <nav>
-        <a href="index.html" class="nav-link primary">Home</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <!--<a href="cold-email.html" class="nav-link">Cold Email</a>
-        <a href="business-model.html" class="nav-link">Business Model</a>-->
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </div>
+<nav>
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="pricing.html" class="nav-link">Pricing</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="portfolio.html" class="nav-link">Portfolio</a>
+  <a href="cold-email.html" class="nav-link">Cold Email</a>
+  <a href="business-model.html" class="nav-link">Business Model</a>
+  <a href="contact.html" class="nav-link primary">Contact</a>
+</nav>
+    </header>
 
-  <div class="page" id="top">
     <main>
+      <section class="hero">
         <div class="hero-left">
           <div class="hero-inner">
-            <div class="hero-kicker">Websites that connects your business online</div>
+            <div class="hero-kicker">Websites that actually bring in customers</div>
             <h1 class="hero-title">
-                Bold, modern sites for <span>local Irish businesses</span> starting at just <a href="pricing.html"><u>€49.</u></a>
+              Bold, modern sites for <span>local Irish businesses</span> starting at just €149.
             </h1>
             <p class="hero-sub">
-              We help all sorts of small business, trades, salons, cafés, and local shops go from “only on Facebook” to having a clean, mobile‑friendly website that looks professional and actually gets enquiries.
+              I help trades, salons, cafés, and local shops go from “only on Facebook” to having a clean, mobile‑friendly
+              website that looks professional and actually gets enquiries.
             </p>
             <div class="hero-badges">
-                <span><a href="services.html"><u>Free audit of your site &  report with suggested fixes</u></a></span>
-                <span><a href="pricing.html"><u>€10–€30</u></a> <a href="services.html"><u>Quick fixes -- changing font, image, colours</u></a> </span>
-                <span><a href="pricing.html"><u>€ 49</u></a> <a href="services.html"><u>Starter Landing Page -- Your Digital Front Door</u></a></span>
-                <span><a href="services.html"><u>Ongoing support by E-mail & Whatsapp/Messaging</u></a></span>
+              <span>Free audit & demo preview</span>
+              <span>€10–€40 quick fixes</span>
+              <span>€149 starter landing page</span>
+              <span>Ongoing support from €20/hour</span>
             </div>
             <div class="hero-cta-row">
-              <a href="pricing.html" class="btn btn-primary">View full pricing</a>
-              <a href="contact.html" class="btn btn-ghost">Book a free audit</a>
+              <a href="pricing.html" class="btn btn-primary" >View full pricing</a>
+              <a href="contact.html" class="btn btn-ghost" >Book a free audit</a>
             </div>
             <div class="hero-note">
-
+              <strong>Need business today?</strong> Start with free audits and €10–€20 fixes to get your first paying
+              clients fast.
             </div>
           </div>
         </div>
-        <section class="hero">
+
         <div class="hero-right">
-        <a href="services.html"><em>
           <div class="hero-card">
             <div class="hero-card-inner">
-              <div class="hero-card-title" style="display: flex; justify-content: center;">Digital, Administrative and Accounting.</div>
-              <div class="hero-card-sub" style="display: flex; justify-content: center;">
-                A full-stack solution for local Irish small business.
+              <div class="hero-card-title">Your “immediate business” ladder</div>
+              <div class="hero-card-sub">
+                A simple path from free value to recurring income with local clients.
               </div>
               <ul class="hero-card-list">
-
+                <li>Offer free audits and demo screenshots to start conversations.</li>
+                <li>Sell €10–€40 quick fixes to turn interest into cash.</li>
+                <li>Pitch a €149 landing page as the clear next step.</li>
+                <li>Upsell add‑ons and monthly support for recurring income.</li>
               </ul>
-              <div class="hero-card-footer" style="display: flex; justify-content: center;">
-                A website is your digital front door. Organization brings peace of mind. Accounting reveals your success.
+              <div class="hero-card-footer">
+                This site is your agency front door. Use it as your live sales deck.
               </div>
             </div>
           </div>
-        </em></a>
-         <div class="hero-mini">
+
+          <div class="hero-mini">
             <div class="hero-mini-card">
-                <div class="hero-mini-label"><a href="services.html"><u>Core Offer</u></a></div>
-                <div class="hero-mini-main"><a href="pricing.html"><u>€49</u></a> Landing Page</div>
+              <div class="hero-mini-label">Core offer</div>
+              <div class="hero-mini-main">€149 Landing Page</div>
               <div class="hero-mini-sub">
                 1‑page site, mobile‑friendly, clean HTML/CSS, built for local trades & shops.
               </div>
             </div>
-         <a href="services.html">
             <div class="hero-mini-card">
-              <div class="hero-mini-label">Trust Magnet</div>
+              <div class="hero-mini-label">Lead magnet</div>
               <div class="hero-mini-main">Free Audit & Demo</div>
               <div class="hero-mini-sub">
                 Show value first, then offer low‑cost fixes and the full site.
               </div>
             </div>
-        </a>
           </div>
         </div>
       </section>
 
       <section>
-        <div class="section-label">Why Design Resources?</div>
-        <h2 class="section-title">Built by a real local Irish small business, not big tech.</h2>
+        <div class="section-label">Why this studio</div>
+        <h2 class="section-title">Built for real Irish businesses, not tech bros</h2>
         <p class="section-sub">
           Most small businesses don’t need a giant, complicated website. They need something fast, clear, and easy to
-          update. That’s exactly what we build.
+          update. That’s exactly what I build.
         </p>
 
         <div class="cards-grid">
           <article class="card">
-            <h3 class="card-title">Simple, Clear <a href="services.html"><u>
-                Pricing </u></a></h3>
-            <p class="card-tagline">No hidden fees, no jargons.</p>
+            <h3 class="card-title">Simple, clear pricing</h3>
+            <p class="card-tagline">No hidden fees, no jargon.</p>
             <ul class="card-list">
-              <li>€49 for a full starter Landing Page.</li>
-              <li>€15–€30 for quick fixes and small jobs.</li>
-              <li>Ongoing support with more than Design.</li>
+              <li>€149 for a full starter landing page.</li>
+              <li>€10–€40 for quick fixes and small jobs.</li>
+              <li>€20/hour for ongoing support when you need it.</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3 class="card-title">Designed for Local Irish Small Business</h3>
-            <p class="card-tagline">So people can find you online.</p>
+            <h3 class="card-title">Designed for local search</h3>
+            <p class="card-tagline">So people can actually find you.</p>
             <ul class="card-list">
-         <a href="services.html">
-              <li>Basic SEO embeded into every site.</li>
-              <li>Optimised for your trade in your town.</li>
-              <li>Clear calls‑to‑action so people can contact you.</li>
-        </a>
+              <li>Basic SEO baked into every site.</li>
+              <li>Optimised for “[your trade] in [your town]”.</li>
+              <li>Clear calls‑to‑action so people contact you.</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3 class="card-title">Fast, mobile‑first builds, for easy access to you.</h3>
-            <p class="card-tagline">Because most customers are on their phones most of the time.</p>
+            <h3 class="card-title">Fast, mobile‑first builds</h3>
+            <p class="card-tagline">Because most customers are on their phones.</p>
             <ul class="card-list">
-         <a href="services.html">
               <li>Clean HTML & CSS, no clunky builders.</li>
               <li>Loads quickly, even on older phones.</li>
               <li>Looks sharp on desktop, tablet, and mobile.</li>
-        </a>
             </ul>
           </article>
         </div>
@@ -687,46 +584,20 @@
             Start with a free audit and a demo preview of what your site could look like.
           </div>
           <div>
-            <a href="contact.html" class="btn btn-primary">Get your free audit</a>
+            <a href="contact.html" class="btn btn-primary" >Get your free audit</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-nav">
-        <a href="index.html">Home</a>·
-        <a href="pricing.html">Pricing</a>·
-        <a href="services.html">Services</a>·
-        <a href="portfolio.html">Portfolio</a>·
-        <!--<a href="cold-email.html">Cold Email</a>·
-        <a href="business-model.html">Business Model</a>·-->
-        <a href="contact.html">Contact</a>
-      </div>
-      © <span id="year"></span> Laninya – Design Resources.
+      © <span id="year"></span> Laninya – Digital Studio. Built with clean HTML &amp; CSS.
     </footer>
-  </div>
-
-  <div class="back-to-top" id="backToTop">
-    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Top</button>
-  </div>
-
-  <div class="floating-contact">
-    <a href="contact.html">Contact Me</a>
   </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    window.addEventListener("scroll", () => {
-      const btn = document.getElementById("backToTop");
-      if (window.scrollY > 250) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    });
   </script>
-
 </body>
 </html>

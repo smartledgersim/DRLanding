@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louth Jewelry Boutique</title>
+    <style>
+        html {
+            scroll-behavior: smooth; /* smooth scrolling for anchor links */
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        header {
+            background: #3a2c2c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #5a4444;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338') no-repeat center/cover;
+            color: #fff;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .cta {
+            background: #c59d5f;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .cta button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            background: #fff;
+            color: #c59d5f;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background: #3a2c2c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="home">
+    <h1>Louth Jewelry Boutique</h1>
+    <p>Elegant Pieces Crafted for Every Occasion</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#custom-design">Custom Design</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Timeless Jewelry from the Heart of Louth</h1>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+    <h2>Our Collections</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1" alt="Rings">
+            <h3>Rings</h3>
+            <p>Beautiful engagement, wedding, and fashion rings.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1519744346363-dc9c3c6fdf2f" alt="Necklaces">
+            <h3>Necklaces</h3>
+            <p>Elegant necklaces designed to complement your style.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53b02d" alt="Bracelets">
+            <h3>Bracelets</h3>
+            <p>Stylish bracelets for every occasion.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="Earrings">
+            <h3>Earrings</h3>
+            <p>Classic and modern designs to suit all tastes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CUSTOM DESIGN -->
+<section id="custom-design">
+    <h2>Custom Design</h2>
+    <p>Work with our expert jewelers to create bespoke pieces tailored to your style and occasion.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Louth Jewelry Boutique has been crafting exquisite jewelry for over a decade. We focus on quality, elegance, and timeless designs that make every piece special.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="cta">
+    <h2>Contact Us</h2>
+    <p>Visit us in Louth or reach out online for inquiries, appointments, or custom designs.</p>
+    <button>Get in Touch</button>
+</section>
+
+<footer>
+    <p>&copy; 2026 Louth Jewelry Boutique | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

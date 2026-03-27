@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilkenny Home & Garden Repairs | Expert Local Handyman</title>
+    <style>
+        :root {
+            --primary: #2d5a27; /* Garden Green */
+            --secondary: #f4f4f4;
+            --accent: #d4a373; /* Wood/Earth tone */
+            --text: #333;
+        }
+
+        html { scroll-behavior: smooth; } /* Smooth scrolling for anchors */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://media.istockphoto.com/id/1428027852/photo/artificial-turf-creates-a-natural-look-in-a-backyard-garden.jpg?b=1&s=612x612&w=0&k=20&c=lB1_m2AnoTYDSj9pOoEzBcsKLgVnvG4aA4VD6wZv2rU=');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #b88b5c; }
+
+        .services {
+            padding: 50px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: var(--secondary);
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav a { display: block; margin: 5px 0; }
+            header { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Kilkenny Repairs</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:0871234567">Call: 087 123 4567</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Reliable Home & Garden Repairs</h1>
+    <p>Serving Kilkenny City and County with quality craftsmanship.</p>
+    <br>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+</section>
+
+<section class="services" id="services">
+    <div class="service-card">
+        <h3>🏠 Home Maintenance</h3>
+        <p>From painting and tiling to fixing leaky taps and general DIY tasks.</p>
+    </div>
+    <div class="service-card">
+        <h3>🌳 Garden Care</h3>
+        <p>Fencing, patio cleaning, grass cutting, and hedge trimming.</p>
+    </div>
+    <div class="service-card">
+        <h3>🛠️ Custom Repairs</h3>
+        <p>Broken gates, shelving installations, and flat-pack assembly.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Ready to get started?</h2>
+    <p>Based in the Marble City, we cover all areas from Castlecomer to Thomastown.</p>
+    <div style="margin-top: 20px;">
+        <p><strong>Email:</strong> info@kilkennyrepairs.ie</p>
+        <p><strong>Phone:</strong> 087 123 4567</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Kilkenny Home & Garden Repairs. All rights reserved.
+</footer>
+
+</body>
+</html>

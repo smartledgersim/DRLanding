@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavan Locksmith Services | 24/7 Emergency Repairs</title>
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --accent-yellow: #ffcc00;
+            --dark-grey: #333;
+            --light-grey: #f4f4f4;
+        }
+
+        html {
+            scroll-behavior: smooth; /* smooth anchor scrolling */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--dark-grey);
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        nav a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .phone-btn {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+
+        /* Sections */
+        section {
+            padding: 50px 5%;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: var(--light-grey);
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 { color: var(--primary-blue); }
+
+        .areas {
+            text-align: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e0e0;
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--dark-grey);
+            color: white;
+            text-align: center;
+            padding: 40px 5%;
+        }
+
+        .emergency-bar {
+            background: var(--accent-yellow);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="emergency-bar">
+        ⚡ 24/7 Emergency Locksmith Dispatch in Cavan
+    </div>
+
+    <nav>
+        <div class="logo">CavanLock Repairs</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#areas">Areas</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:0871234567" class="phone-btn">📞 Call Now</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <h1>Locked Out in County Cavan?</h1>
+        <p>Professional, Fast, and Reliable Locksmith Services. We aim to be with you in 30-60 minutes.</p>
+        <a href="tel:0871234567" style="background: var(--accent-yellow); color: black; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.2rem;">Get a Free Quote</a>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="service-card">
+            <h3>Emergency Entry</h3>
+            <p>Locked out of your home or car? Non-destructive entry specialists available 24/7.</p>
+        </div>
+        <div class="service-card">
+            <h3>Lock Repairs</h3>
+            <p>Fixing jammed or broken locks on uPVC doors, timber doors, and windows.</p>
+        </div>
+        <div class="service-card">
+            <h3>New Installations</h3>
+            <p>Upgrading to high-security anti-snap locks to keep your Cavan home safe.</p>
+        </div>
+    </section>
+
+    <!-- AREAS -->
+    <section class="areas" id="areas">
+        <h2>Areas We Cover in Cavan</h2>
+        <p>Serving residential and commercial customers across the county:</p>
+        <span class="tag">Cavan Town</span>
+        <span class="tag">Virginia</span>
+        <span class="tag">Bailieborough</span>
+        <span class="tag">Kingscourt</span>
+        <span class="tag">Cootehill</span>
+        <span class="tag">Belturbet</span>
+        <span class="tag">Mullagh</span>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About CavanLock Repairs</h2>
+        <p>We are a fully certified locksmith service operating across County Cavan. Our mission is fast, reliable, and professional service for homes, businesses, and vehicles.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@cavanlocksmith.ie" style="color: var(--primary-blue);">info@cavanlocksmith.ie</a></p>
+        <p>Phone: <a href="tel:0871234567" style="color: var(--primary-blue);">087 123 4567</a></p>
+        <p>Address: County Cavan, Ireland</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CavanLock Repairs. Fully Insured & Certified.</p>
+    </footer>
+
+</body>
+</html>

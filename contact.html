@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact – Laninya Digital Resources</title>
+  <title>Contact – Laninya Design Resources</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact details and call-to-action for Laninya Digital Resources." />
+  <meta name="description" content="Contact details and call-to-action for Laninya Design Resources." />
   <style>
     :root {
       --bg: #f5f7fb;
@@ -23,7 +23,7 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 55%),
         radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.16), transparent 55%),
@@ -77,7 +77,7 @@
       font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em;
       color: var(--primary-dark); font-weight: 700; margin-bottom: 6px;
     }
-    .section-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .section-title { font-size: 22px; font-weight: 700; margin-top: 130px; margin-bottom: 8px; }
     .section-sub {
       font-size: 14px; color: var(--muted); max-width: 680px; margin-bottom: 16px;
     }
@@ -108,8 +108,27 @@
     }
     .btn-primary {
       background: linear-gradient(135deg, #2563eb, #1e3a8a);
-      color: #fefce8; box-shadow: 0 14px 32px rgba(37, 99, 235, 0.5);
+      color: #fefce8;
+      box-shadow: 0 16px 36px rgba(37, 99, 235, 0.5);
     }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 20px 48px rgba(37, 99, 235, 0.65);
+      text-decoration: none;
+    }
+    .cta-banner {
+      margin: 24px;
+      background: var(--bg-alt);
+      border-radius: 18px;
+      padding: 10px 10px 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }      
     footer {
       margin-top: 40px; font-size: 11px; color: var(--muted); text-align: center;
     }
@@ -138,12 +157,10 @@
       box-shadow: 0 16px 36px rgba(15, 23, 42, 0.6);
       text-decoration: none;
     }
-
     .floating-contact a:hover {
       box-shadow: 0 20px 48px rgba(15, 23, 42, 0.8);
       transform: translateY(-1px);
     }
-
     /* Back to top button */
     .back-to-top {
       position: fixed;
@@ -152,7 +169,6 @@
       z-index: 40;
       display: none;
     }
-
     .back-to-top button {
       border-radius: 999px;
       border: none;
@@ -163,16 +179,55 @@
       cursor: pointer;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.8);
     }
-
     .back-to-top button:hover {
       background: #020617;
     }
+      /*FORM*/
+    .input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 6px 0 6px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      font-size: 14px;
+      color: #111827;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.25);
+    }
+
+    .success-box {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      background: #d1fae5;
+      border-radius: 12px;
+      color: #065f46;
+      font-weight: 600;
+    }
+      
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
     }
-      @media (max-width: 640px) {
+    @media (max-width: 880px) {
+      .pricing-grid { grid-template-columns: minmax(0, 1fr); }
+      nav { justify-content: flex-start; }
+    }
+    @media (max-width: 640px) {
+    .nav-inner { flex-direction: column; align-items: flex-start; }
       header { flex-direction: column; align-items: flex-start; }
+    .btn-primary {margin-top: 20px;
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
+      color: #fefce8;
+      box-shadow: 0 16px 36px rgba(37, 99, 235, 0.5);
+    }
+    .section-title { font-size: 22px; font-weight: 700; margin-top: 170px; margin-bottom: 8px; }
     }
   </style>
 </head>
@@ -184,60 +239,79 @@
       <div class="brand">
         <div class="brand-logo">LDR</div>
         <div>
-          <div class="brand-title">Laninya – Digital Resources</div>
+          <div class="brand-title">Laninya – Design Resources</div>
           <div class="brand-sub">Websites & Digital Marketing for local Irish small businesses</div>
         </div>
       </div>
       <nav>
-        <a href="index.html" class="nav-link ">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="portfolio.html" class="nav-link">Portfolio</a>
         <!--<a href="cold-email.html" class="nav-link">Cold Email</a>
         <a href="business-model.html" class="nav-link">Business Model</a>-->
-        <a href="contact.html" class="nav-link primary">Contact</a>
-      </nav>
+        <a href="contact.html" class="nav-link primary">Contact</a>    </nav>
     </div>
   </div>
     </header>
     
     <main>
       <section>
-        <div class="section-label">Contact</div>
-        <h2 class="section-title">One clear way to reach you</h2>
+        <h2 class="section-title">Keeping Digital Marketing simple. </h2>
         <p class="section-sub">
-          Keep it simple. Most small business owners just want to send a quick email and get a human reply.
+          Most small business owners just want to send a quick email and get a human reply. We offer you exactly this.
         </p>
 
         <div class="contact-card">
           <div class="contact-inner">
             <div class="contact-title">Ready to look more professional than your competitors?</div>
-            <div class="contact-sub">
-              Send a quick email with your business name, location, and what you’d like your website or fixes to do.
-            </div>
             <div class="contact-row">
-              <span class="label">Email:</span>
-              <strong>Design.Resources@dr.com</strong>
+                <span class="label"><big>Send a quick email with your business name, location, and what you’d like your website or fixes to do.</big></span>
+                
+                <div class="card">
+                  <h3>Contact Me</h3>
+
+                  <form id="contactForm" action="https://formspree.io/f/xvzvgyzg" method="POST">
+
+                    <label>Your Name</label>
+                    <input type="text" required class="input" name="name">
+
+                    <label>Your Email</label>
+                    <input type="email" required class="input" name="email">
+
+                    <label>Your Phone</label>
+                    <input type="text" required class="input" name="phone">
+
+                    <label>Your Message</label>
+                    <textarea rows="5" required class="input" name="message"></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
+                </div>
+
+                <br><br><br>
+              <div class="contact-row">
+              <span class="label" style="padding-top: 150px;">Email:</span>
+              Design.Resources@dr.com
             </div>
             <div class="contact-row">
               <span class="label">Website:</span>
-              <strong>www.dr.com</strong>
+                <a href="https://smartledgersim.github.io/DRLanding" target="_blank" rel="noopener">
+              https://smartledgersim.github.io/DRLanding/
+                </a>
             </div>
             <div class="contact-row">
-              <span class="label">Subject idea:</span>
-              “Quick website idea for [Business Name] in [Town]”
-            </div>
-            <div style="margin-top:12px;">
-              <a href="mailto:Design.Resources@dr.com?subject=Quick%20website%20idea%20for%20your%20business"
-                 class="btn btn-pcontact.htmlrimary" target="_blank" rel="noopener">
-                Send me a quick email
-              </a>
+              <span class="label">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/smartledgersim-by-laninya/" target="_blank" rel="noopener">
+              https://www.linkedin.com/in/smartledgersim-by-laninya/
+                </a>
             </div>
           </div>
         </div>
       </section>
     </main>
     </div>
+
     <footer>
       <div class="footer-nav">
         <a href="index.html">Home</a>·
@@ -248,7 +322,7 @@
         <a href="business-model.html">Business Model</a>·-->
         <a href="contact.html">Contact</a>
       </div>
-      © <span id="year"></span> Laninya – Digital Resources.
+      © <span id="year"></span> Laninya – Design Resources.
     </footer>
 
   <div class="back-to-top" id="backToTop">
@@ -256,7 +330,7 @@
   </div>
 
   <div class="floating-contact">
-    <a href="contact.html">Contact Me</a>
+    <a href="contact.html" class="btn btn-primary" target="_blank" rel="noopener">Fill a Form</a>
   </div>
 
   <script>

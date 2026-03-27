@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Local Butcher | Castlerea's Finest Meats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.istockphoto.com/id/1315903639/photo/raw-meats-on-butchers-shop-stock-image.jpg?s=612x612&w=0&k=20&c=j5zPwk5zjVJi2nWXHcMhl5pov5-sAKCWE-wrkJV9tNs=');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans">
+
+    <nav class="bg-red-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tight">CASTLEREA <span class="text-red-300">MEATS</span></h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-red-200">Home</a>
+                <a href="#about" class="hover:text-red-200">Our Story</a>
+                <a href="#products" class="hover:text-red-200">Products</a>
+                <a href="#contact" class="hover:text-red-200">Contact</a>
+            </div>
+            <a href="tel:0941234567" class="bg-white text-red-900 px-4 py-2 rounded-full font-bold hover:bg-red-100 transition">
+                Call Now
+            </a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg h-[60vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Quality You Can Trust</h2>
+            <p class="text-xl md:text-2xl mb-8">Premium Local Beef, Pork, and Lamb — From Farm to Fork in Co. Roscommon.</p>
+            <div class="space-x-4">
+                <a href="#products" class="bg-red-700 hover:bg-red-800 text-white px-8 py-3 rounded-lg font-bold text-lg inline-block">View Weekly Specials</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-6">
+                <i class="fas fa-cow text-4xl text-red-800 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">100% Irish</h3>
+                <p class="text-gray-600">All our meat is sourced from local farms within the Roscommon area.</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-utensils text-4xl text-red-800 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Expertly Cut</h3>
+                <p class="text-gray-600">Traditional butchery skills passed down through generations.</p>
+            </div>
+            <div class="p-6">
+                <i class="fas fa-truck text-4xl text-red-800 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Home Delivery</h3>
+                <p class="text-gray-600">Order your family boxes for delivery across Castlerea and surrounds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Weekly Specials</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500 italic">[Steak Image]</div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg">Sirloin Steak (2 Pack)</h4>
+                        <p class="text-red-700 font-bold text-xl">€12.00</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500 italic">[Chicken Image]</div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg">Family Roast Chicken</h4>
+                        <p class="text-red-700 font-bold text-xl">€8.50</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500 italic">[Bacon Image]</div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg">Dry Cured Bacon</h4>
+                        <p class="text-red-700 font-bold text-xl">€5.00</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500 italic">[Box Image]</div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-lg">Midweek Family Box</h4>
+                        <p class="text-red-700 font-bold text-xl">€45.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Visit Us in Castlerea</h3>
+                <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-red-500"></i> Main Street, Castlerea, Co. Roscommon</p>
+                <p class="mb-2"><i class="fas fa-phone mr-2 text-red-500"></i> (094) 962 XXXX</p>
+                <p class="mb-6"><i class="fas fa-envelope mr-2 text-red-500"></i> info@castlereameats.ie</p>
+                
+                <h4 class="font-bold mb-2">Opening Hours:</h4>
+                <ul class="text-gray-400">
+                    <li>Mon - Sat: 8:30am - 6:00pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 text-center">Quick Inquiry</h3>
+                <form action="#" class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-2 rounded bg-slate-700 border-none text-white focus:ring-2 focus:ring-red-500">
+                    <input type="email" placeholder="Email Address" class="w-full p-2 rounded bg-slate-700 border-none text-white focus:ring-2 focus:ring-red-500">
+                    <textarea placeholder="Your Order or Question" class="w-full p-2 rounded bg-slate-700 border-none text-white h-24 focus:ring-2 focus:ring-red-500"></textarea>
+                    <button class="w-full bg-red-700 hover:bg-red-800 py-3 rounded font-bold uppercase tracking-widest transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-slate-800 text-gray-500">
+            <p>&copy; 2024 Castlerea Butchery. Serving the community since 19XX.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
