@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a Call – Design Resources by Laninya</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --bg-alt: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1e3a8a;
+      --accent: #fbbf24;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --max-width: 1120px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.16), transparent 55%),
+        #f3f4f6;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: var(--max-width); margin: 0 auto; padding: 20px 18px 64px; }
+
+    .nav-wrapper {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.9));
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .nav-inner {
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 10px 18px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; margin-bottom: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo {
+      width: 46px; height: 46px; border-radius: 16px;
+      background: conic-gradient(from 160deg, #fbbf24, #2563eb, #1e3a8a, #fbbf24);
+      display: flex; align-items: center; justify-content: center;
+      color: #fefce8; font-weight: 800; font-size: 20px;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.35);
+    }
+    .brand-title { font-weight: 700; font-size: 18px; }
+    .brand-sub { font-size: 13px; color: var(--muted); }
+
+    nav {
+      display: flex; gap: 10px; align-items: center;
+      font-size: 13px; flex-wrap: wrap; justify-content: flex-end;
+    }
+    .nav-link {
+      padding: 6px 11px; border-radius: var(--radius-pill);
+      color: #111827; background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.35); backdrop-filter: blur(8px);
+    }
+    .nav-link.primary {
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
+      color: #fefce8; border-color: transparent; font-weight: 600;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.45);
+    }
+
+    .section-label {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; margin-top: 70px;
+      color: var(--primary-dark); font-weight: 700; margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 24px; font-weight: 700;
+      margin-top: 10px; margin-bottom: 8px;
+    }
+    .section-sub {
+      font-size: 14px; color: var(--muted); max-width: 680px; margin-bottom: 16px;
+    }
+    section { margin-bottom: 40px; }
+
+    .booking-card {
+      background: var(--bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
+    .booking-header {
+      margin-bottom: 14px;
+    }
+    .booking-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .booking-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .calendly-wrapper {
+      margin-top: 10px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      min-height: 520px;
+    }
+    .calendly-inline-widget {
+      min-width: 100%;
+      height: 520px;
+    }
+
+    .cta-banner {
+      margin-top: 20px;
+      background: var(--bg-alt);
+      border-radius: 18px;
+      padding: 10px 10px 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 40px; font-size: 11px; color: var(--muted); text-align: center;
+    }
+    .footer-nav { margin-bottom: 6px; }
+    .footer-nav a {
+      margin: 0 6px; font-size: 11px; color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      header { flex-direction: column; align-items: flex-start; }
+      .section-title { margin-top: 170px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-wrapper">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-logo">DRL</div>
+        <div>
+          <div class="brand-title">Design Resources by Laninya</div>
+          <div class="brand-sub">Websites &amp; Digital Marketing for local Irish small businesses</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index" class="nav-link">Home</a>
+        <a href="pricing" class="nav-link">Pricing</a>
+        <a href="services" class="nav-link">Services</a>
+        <a href="portfolio" class="nav-link">Portfolio</a>
+        <a href="contact" class="nav-link">Contact</a>
+        <a href="booking" class="nav-link primary">Book a Call</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="page">
+    <section>
+      <div class="section-label">Plan a call</div>
+      <h1 class="section-title">Book a strategy session</h1>
+      <p class="section-sub">
+        Choose a time that works for you. We’ll walk through your website, offers, and a clear next step for your business.
+      </p>
+
+      <div class="booking-card">
+        <div class="booking-header">
+          <div class="booking-title">Schedule with Calendly</div>
+          <div class="booking-sub">
+            Pick a slot below—your booking is confirmed instantly and you’ll receive an email reminder.
+          </div>
+        </div>
+
+        <div class="calendly-wrapper">
+          <div class="calendly-inline-widget" data-url="https://calendly.com/design-resources/5min" >
+          </div>
+        </div>
+
+        <div class="cta-banner">
+          Prefer email? You can also reach out at <strong>design.resources@dr.com</strong> and we’ll arrange a time manually.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="index">Home</a>·
+        <a href="services">Services</a>·
+        <a href="pricing">Pricing</a>·
+        <a href="contact">Contact</a>·
+        <a href="booking">Book a Call</a>
+
+      </div>
+      <div>© <?php echo date('Y'); ?> Design Resources by Laninya. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <!-- Calendly embed script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
