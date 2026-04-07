@@ -87,7 +87,7 @@
     }
     section { margin-bottom: 40px; }
     .cards-grid {
-      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+      display: grid;
     }
     .card {
       background: var(--bg-alt); border-radius: var(--radius-md);
@@ -150,8 +150,8 @@
       gap: 16px;
     }
      .cards-grid {
-      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
-    }
+         display: grid;}
+      
     .cards-card {
       background: var(--bg-alt); border-radius: 18px;
       padding: 16px 16px 14px; border: 1px solid var(--border);
@@ -161,9 +161,10 @@
       .cards-card.highlight {
       border-color: rgba(37, 99, 235, 0.8);
       box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+      margin-bottom: 15px;
     }
       @media (max-width: 880px) {
-      .cards-grid { grid-template-columns: minmax(0, 1fr); }
+      .cards-grid { display: flex;}
       nav { justify-content: flex-start; }
     }
     /* Floating Contact button */
@@ -271,98 +272,104 @@
 
         <div class="cards-grid">
           <article class="cards-card highlight">
-            <div class="pricing-label">Starter Offer</div>              
-            <h3 class="card-title">Free – “Try Before You Buy”</h3>
-            <p class="card-tagline">No‑risk way to see how you work.</p>
+            <div class="pricing-label">Trial Pack</div>              
+            <h3 class="card-title">No‑risk way to see how we work.</h3>
+            <p class="card-tagline">Free – “Try Before You Buy”</p>
             <ul class="card-list">
-              <li>Website audit</li>
-              <li>Online presence review</li>
-              <li>Demo Landing Page screenshot</li>
-              <li>10‑minute consultation (Fixes & Updates)</li>
+              <li>Comprehensive Website Audit - A "digital health check" that goes beyond surface-level design to evaluate your site's technical foundation and performance. This deep dive identifies hidden roadblocks preventing growth. Technical Performance, SEO Foundations and Conversion Optimization </li>
+              <li>Total Online Presence Review - An audit of how your brand is perceived across the entire web, ensuring you are visible wherever your customers are looking. Search & Social, Credibility & Trust and Competitive Landscape</li>
+              <li>Demo Landing Page Visuals - A high-impact mockup or screenshot of a landing page specifically designed to convert high-intent leads. Visual Prototype, Conversion-First Design and Trust Elements</li>
+              <li>10-Minute Consultation (Fixes & Updates) - A rapid-response session focused on identifying and prioritizing immediate "quick wins" for your website's stability and security. Rapid Issue Diagnosis, Security & Performance and Actionable Roadmap</li>
                 
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <div class="pricing-label">Basic Offer</div>
+            <div class="pricing-label">Basic Pack</div>
             <h3 class="card-title">Fast, simple, and affordable</h3>
-            <p class="card-tagline">Quick Fixes </p>
+            <p class="card-tagline">Low‑Cost Services & Light Support</p>
             <ul class="card-list">
-              <li>Text edits fixing small text or spacing issue</li>
-              <li> Rewrite service description</li>
-              <li> Photo updates adding new photos 
-              <li> Opening hours updating description and formats</li>
-              <li> Changing font design</li>
-              <li> Mini SEO tune‑up (titles + meta descriptions)</li>
-              <li> Report layout issue</li>                                  
-              <li>Small CSS fixes</li>
-              <li>Light Adm (Word, Excel)</li>
+              <li>Typography & Font Styling: Modernising your site’s look by updating font families, adjusting line heights for better readability, and ensuring consistent text styling across all pages to match your brand identity.</li>
+              <li> Precise Layout & Spacing Adjustments: Eliminating awkward gaps, fixing overlapping elements, and refining padding/margins to ensure your content looks intentional and polished on every screen size.</li>
+              <li> CSS Troubleshooting & Styling Fixes: Resolving stubborn "style bugs"—like buttons that won't align, inconsistent border colours, or hover effects that aren't firing correctly—using clean, custom code.</li>
+              <li> Dynamic Photo & Media Updates: Refreshing your visual library by uploading high-resolution imagery, optimising file sizes for speed, and ensuring all galleries or banners are current and engaging.</li>
+              <li> Service Description Overhauls: Moving beyond simple lists to write compelling, benefit-driven copy that clearly explains the value of what you offer and speaks directly to your customer’s needs.</li>
+              <li> Editorial Polish & Text Fixes: A meticulous review to correct typos, fix grammatical slips, and ensure your messaging is punchy, professional, and easy to skim.</li>
+              <li> Business Hours & Schedule Formatting: Ensuring your availability is crystal clear by updating opening times, holiday hours, and appointment formats so customers never have to guess when you’re open.</li>                                  
+              <li>Mini SEO Tune-up: Improving your visibility in search results by crafting unique, keyword-rich Page Titles and Meta Descriptions that entice users to click through from Google.</li>
+              <li>UX/Report Layout Issue Resolution: Digging into the backend to fix broken report displays, messy data tables, or PDF export issues that might be confusing your clients or staff.</li>
+              <li>Light Administrative Support: Bridging the gap between your website and your office workflow with professional data entry, spreadsheet formatting (Excel), or document preparation (Word) to keep your records organised.</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <div class="pricing-label">Core Offer</div>              
+            <div class="pricing-label">Core Pack</div>              
             <h3 class="card-title">Your main website offer.</h3>
-            <p class="card-tagline">Landing Page (€49)</p>
+            <p class="card-tagline">Starter Landing Page</p>
             <ul class="card-list">
-              <li>1‑page website</li>
-              <li>Mobile‑friendly</li>
-              <li>Clean HTML/CSS</li>
-              <li>Services + reviews + contact</li>
-              <li>Basic SEO (titles + meta descriptions, short and long-tail keywords)</li>
-              <li>1 round of edits</li>
+              <li>Custom 1-Page Website Architecture: A streamlined, "scrollable" user experience that tells your brand story from top to bottom. By keeping everything on one page, you eliminate navigation friction and keep the user focused on your primary call-to-action.</li>
+              <li>Fully Responsive & Mobile-Optimised: Your site will look and function perfectly on any device. We prioritise "mobile-first" design, ensuring fast load times and easy thumb-navigation for users on the go.</li>
+              <li>Clean, Lightweight HTML5 & CSS3: Built with high-quality, bloat-free code. This ensures your site isn't just pretty—it’s technically sound, secure, and incredibly fast, which is a major factor in both user retention and search engine rankings.</li>
+              <li>Essential Content Sections: We include all the "must-have" conversion elements: ·  Services: Clear, punchy breakdowns of what you offer. ·  Social Proof: A dedicated section for customer reviews and testimonials to build immediate trust. ·  Contact & Lead Capture: An integrated contact form or "click-to-call" buttons to make reaching you effortless.</li>
+              <li>Strategic SEO Foundation: We don’t just build it; we make sure it can be found. ·  Meta Data: Custom-crafted Page Titles and Meta Descriptions to improve click-through rates from Google. ·  Keyword Integration: We research and implement both Short-tail keywords (high volume, e.g., "Plumber") and Long-tail keywords (specific intent, e.g., "Emergency leak repair in Dublin") to capture the right audience.</li>
+              <li>Post-Launch Refinement: Includes one full round of edits after the initial build. This allows us to tweak the copy, swap images, or adjust layout elements to ensure the final product perfectly aligns with your vision.</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <div class="pricing-label">Silver Offer</div>
+            <div class="pricing-label">Silver Pack</div>
             <h3 class="card-title">Extra features when you’re ready.</h3>
-            <p class="card-tagline">Add‑Ons (€15–€120)</p>
+            <p class="card-tagline">Add‑Ons</p>
             <ul class="card-list">
-              <li>New service section</li>
-              <li>Photo Gallery Page</li>
-              <li>Booking system embeded</li>
-              <li>Testimonials Page</li>
-              <li>SEO content</li>
-              <li>Extra pages</li> 
-              <li>Light Adm (Word, Excel, Social Media)</li>
-              <li>Light Bookkeeping (Sage, QuickBooks, Xero, Wave)</li>
+              <li>Get a professional, high-performance online presence with a dedicated single-page website designed to turn visitors into customers. This is the perfect entry-level solution for startups, freelancers, or specific product launches.</li>
+              <li>All-Inclusive Service Access: Your retainer covers everything from our Starter & Basic service tiers</li>
+              <li>Expanded Service Architecture: We’ll build out a dedicated New Service Section that goes beyond a simple list. This includes custom icons, detailed benefit breakdowns, and unique calls-to-action for each of your core offerings to improve conversion rates.</li>
+              <li>High-Impact Photo Gallery Page: A professionally curated visual portfolio to showcase your best work. We implement responsive, "lightbox" style galleries that allow users to zoom in on high-resolution project photos while maintaining lightning-fast page load speeds.</li>
+              <li>Integrated Booking & Scheduling System: We’ll embed a seamless third-party booking engine (like Calendly, Acuity, or Fresha) directly into your site. This allows clients to view your availability and book appointments 24/7, reducing your administrative workload and preventing missed opportunities.</li>
+              <li>Dedicated Testimonials & Case Studies Page: Social proof is your strongest sales tool. We create a dedicated space for long-form reviews, success stories, and client logos to establish you as a trusted authority in your field.</li>
+              <li>Strategic SEO Content Expansion: Move up the Google rankings with optimised blog posts or landing page copy. We don't just write; we research high-intent keywords and structure your content with proper header tags (H1-H3) to attract organic traffic that actually converts.</li>
+              <li>Custom Extra Pages: Whether you need a detailed "About Us," a "FAQ" section to reduce support emails, or a "Privacy Policy" for compliance, we can build out additional bespoke pages tailored to your specific business requirements.</li> 
+              <li>Light Administrative & Social Media Support: Free up your time by outsourcing the "small stuff." We offer professional document formatting in Word, data management in Excel, and basic Social Media management (scheduling posts, updating bios, or graphic creation) to keep your brand active and organised.</li>
+              <li>Digital Bookkeeping Integration: We assist with the "business side" of your online presence by handling light bookkeeping tasks. Whether you use Sage, QuickBooks, Xero, or Wave, we can help with invoice generation, expense categorisation, and ensuring your digital financial records stay accurate and up-to-date.</li>
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <div class="pricing-label">Premium Offer</div>
+            <div class="pricing-label">Premium Pack</div>
             <h3 class="card-title">We're on call for our clients.</h3>
-            <p class="card-tagline">Ongoing Support (From €120)</p>
+            <p class="card-tagline">Ongoing Support</p>
             <ul class="card-list">
-              <li>Includes Starter, Basic, Core and Silver Offer</li>
-              <li>Website Updates</li>
-              <li>Content changes, reposting, revamping</li>
-              <li>Fixes in layout and design</li>
-                <li>SEO/SERP improvement</li>
-                <li>Custom Admin (Word, Excel, Database) 
-                <li>Social Media, Facebook/Instagram, LinkedIn, others</li>
-                <li>Custom Bookkeeping and Digital Marketing</li>
+              <li>Consider us your dedicated "outsourced digital department." This isn’t just a maintenance plan; it’s a proactive partnership designed to keep your business agile, visible, and technically flawless while you focus on high-level operations.</li>
+              <li>All-Inclusive Service Access: Your retainer covers everything from our Starter, Basic and Silver service tiers. This means you have a flexible credit of hours to use across technical builds, design refreshes, or administrative tasks as your business needs shift.</li>
+              <li>Priority Website Lifecycle Management: We don’t just "fix" things; we evolve them. We handle real-time website updates, ensuring your CMS, plugins, and security protocols are always current to prevent downtime and cyber vulnerabilities.</li>
+              <li>Dynamic Content & Engagement Strategy: Keep your site fresh and authoritative with constant content revamping. We assist with reposting successful assets to new platforms, updating old blog posts for current relevance, and refreshing hero banners to reflect seasonal promotions.</li>
+              <li>Rapid-Response Layout & Design Fixes: If a page looks "off" on a new mobile device or a CSS element breaks after an update, we jump in immediately. We provide precision design tweaks to ensure your user interface (UI) remains polished and professional at all times.</li>
+              <li>Continuous SEO & SERP Optimization: Search rankings are a moving target. We provide ongoing Search Engine Results Page (SERP) monitoring, adjusting your meta-tags, internal linking structures, and keyword density to ensure you stay ahead of competitors in organic search.</li>
+              <li>Bespoke Administrative & Database Management: High-level support for your internal workflows. We create custom Excel macros, format complex Word reports, and manage back-end databases to ensure your business data is organised, searchable, and actionable.</li>
+              <li>Multi-Platform Social Media Presence: We manage the "voice" of your brand across Facebook, Instagram, LinkedIn, and more. From scheduling consistent posts to optimising your bios and monitoring engagement, we ensure your social channels act as a functional extension of your website.</li>
+              <li>Advanced Bookkeeping & Digital Marketing Integration: A holistic approach to your business health. We provide tailored bookkeeping support (via Sage, Xero, or QuickBooks) alongside data-driven marketing campaigns, ensuring your ad spend is tracked accurately against your actual revenue growth.</li>
 
             </ul>
           </article>
 
           <article class="cards-card highlight">
-            <div class="pricing-label">Gold Offer</div>
+            <div class="pricing-label">Gold Pack</div>
             <h3 class="card-title">Look like the experts.</h3>
             <p class="card-tagline">Technical Writing & Support (€ Custom)</p>
             <ul class="card-list">
-              <li>Video Gallery (Youtube)</li>
-              <li>Professional Content Marketing and articles</li>
-              <li>Friendly advice service on process and procedures</li>
-              <li>Dedicated Admin, Bookkeeping and Digital Marketing</li>
-              <li>Accounting System Automation and Documentation</li>
-              <li>E-commerce setup, implementation and maintenance</li>
-              <li>Social Ads including video and display advertising</li>
-              <li>Automated e-mail marketing campaings setup and maintenance</li>
-              <li>Competitor Monitoring</li>
-              <li>Implementation of GA4 (Google Analytics) into your site HTML</li>
-              <li>Interested? Let's talk about your requirements.</li>
+
+              <li>For businesses ready to scale, our bespoke technical writing and high-level support block provides the engine for your digital expansion. This tier is designed for those who require a deep-tech approach, data-backed marketing, and streamlined internal operations.</li>
+              <li>All-Inclusive Service Access: Your retainer covers everything from our Starter, Basic, Silver and Premium service tiers</li>
+              <li>Integrated Video Content Hub: We build high-performance YouTube Video Galleries directly into your site. This allows you to showcase product demos, tutorials, or brand stories without slowing down your page speed, keeping users engaged longer and boosting your site’s "stickiness."</li>
+              <li>Professional Content Marketing & Thought Leadership: Our team produces high-authority industry articles and long-form blog posts. We don’t just write "filler"; we create "pillar content" that positions you as an expert, earns backlinks, and provides genuine value to your audience.</li>
+              <li>Consultative Process & Procedure Advisory: We offer a "friendly advice" service to audit your current business workflows. We help you identify bottlenecks in your customer journey or internal team handovers, providing clear, actionable SOPs (Standard Operating Procedures) to increase efficiency.</li>
+              <li>Dedicated 360° Business Support: Gain a dedicated partner for High-Level Admin, Bookkeeping, and Digital Marketing. This isn't just "maintenance"—it’s an active management service that ensures your back-office and front-end marketing are always in perfect sync.</li>
+              <li>Accounting System Automation & Technical Documentation: We specialise in System Automation, connecting your website sales directly to your accounting software (Sage, Xero, etc.). We provide full technical documentation so your team understands exactly how your automated financial pipeline works.</li>
+              <li>End-to-End E-Commerce Implementation: From initial setup to long-term maintenance, we handle the complexities of online storefronts. This includes payment gateway integration (Stripe/PayPal), inventory management, and secure checkout optimisations to reduce cart abandonment.</li>
+              <li>High-Impact Social Ads (Video & Display): We design and manage targeted advertising campaigns on Facebook, Instagram, and LinkedIn. By combining eye-catching display banners with short-form video ads, we drive high-intent traffic to your landing pages with a focus on measurable ROI.</li>
+              <li>Automated Email Marketing Ecosystems: We build and maintain "Set-and-Forget" email sequences. From welcome series for new subscribers to "win-back" campaigns for inactive customers, we ensure your brand stays top-of-mind through professional, automated communication.</li>
+              <li>Continuous Competitor Monitoring: Stay two steps ahead. We perform regular market audits to track what your competitors are ranking for, their pricing shifts, and their newest marketing tactics, allowing us to pivot your strategy in real-time.</li>
+              <li>Advanced GA4 (Google Analytics) Implementation: We move beyond basic tracking by hard-coding Google Analytics 4 directly into your site's HTML. This provides "granulated" data on user behaviour, event tracking, and conversion paths, giving you the raw data needed to make informed business decisions.</li>
             </ul>
           </article>
         </div>
