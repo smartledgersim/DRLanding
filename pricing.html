@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRK5PQPK');</script>
+    <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
     <title>Design Resources by Laninya – Website Development, SEO, Digital Marketing, Website Design, Accounting Services For Local Irish Small Businesses</title>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -179,7 +186,97 @@
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(8px); }
       to { opacity: 1; transform: translateY(0); }
-    }
+      }
+/* 1. AGGRESSIVE LINEAR SLIDE: Fast, straight, and sharp */
+@keyframes slideRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); /* Starts far right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Ends at its exact spot */
+  }
+}
+
+/* 2. The Shimmer: Premium metallic sweep */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+      
+/* 3. UPDATED PRICING CARD: Clean, Professional, High-Velocity */
+.pricing-card {
+  position: relative;
+  overflow: hidden; /* Clips the shimmer */
+  background: #ffffff;
+  border: 1px solid var(--border);
+  /* 0.8s total duration for a snappy feel */
+  animation: slideRightToLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transition: 
+    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
+    background 0.4s ease, 
+    box-shadow 0.4s ease;
+  z-index: 1;
+}
+
+/* 4. STAGGERED ENTRANCE: Cards arrive in a 1-2-3 sequence */
+.pricing-card:nth-child(1) { animation-delay: 0.1s; }
+.pricing-card:nth-child(2) { animation-delay: 0.2s; }
+.pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* 5. THE SHIMMER LAYER: Pure white light for the luxury look */
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    rgba(255, 255, 255, 0.8), 
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: whiteShimmer 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* 6. HOVER: Straight Vertical Lift (No rotation) */
+.pricing-card:hover {
+  transform: translateY(-12px); /* Pure vertical movement */
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  box-shadow: 0 30px 60px rgba(37, 99, 235, 0.25);
+  z-index: 10;
+}
+
+/* 7. TEXT INVERSION: Maintains readability on blue hover */
+.pricing-card:hover .pricing-label,
+.pricing-card:hover .pricing-name,
+.pricing-card:hover .pricing-price,
+.pricing-card:hover .pricing-meta,
+.pricing-card:hover .pricing-list,
+.pricing-card:hover .pricing-list li {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* 8. BULLET POINTS: Glow gold on hover */
+.pricing-card:hover .pricing-list li::before {
+  background: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
+}
+
+.pricing-price {
+  font-size: 32px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}      
+
     @media (max-width: 880px) {
       .pricing-grid { grid-template-columns: minmax(0, 1fr); }
       nav { justify-content: flex-start; }
@@ -191,6 +288,10 @@
   </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRK5PQPK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   <div class="page">
     <header>
   <div class="nav-wrapper">
@@ -265,6 +366,9 @@
               <li>Services, reviews, contact</li>
               <li>Basic SEO</li>
               <li>Domain & hosting guidance</li>
+              <li>2 Handover options: </li>
+                  <li>Clean transfer ownership</li>
+                  <li>Hosting and Management w/ security updates</li>
               <li>1 round of edits</li>
             </ul>
             <div>
@@ -390,5 +494,7 @@
       }
     });
   </script>
+  <script src="https://drcookiepolicy.pages.dev/cookie-consent.js"></script>
+
 </body>
 </html>
